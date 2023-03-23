@@ -82,7 +82,7 @@ font-size: 149%;
         padding: 4%;
     }
     #playAgain{
-        font-size: 110%;
+        font-size: 90%;
         right: 2%;
         top: 7%;
         width: 7%;
@@ -111,5 +111,8 @@ font-size: 149%;
         }
         #mainButtonContainer{
             margin-top: 7%;
+        }
+        #matches input{
+            width: 7.5%;
         }
   }
