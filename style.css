@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#mainHeading{
+    text-align: center;
+    background-color: rgba(234, 149, 149, 0.859);
+    padding: 1%;
+}
+
+#mainBoxContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+
+}
+
+#computerBox,#userBox{
+    background-image:  linear-gradient(rgb(232, 115, 115), rgb(241, 232, 226)) !important;
+    height: 40vh;
+    width: 30vw;
+    /* border: 2px solid black; */
+}
+
+#mainBoxContainer p{
+text-align: center;
+    font-weight: bold;
+    font-size: 167%;
+    padding: 2px;
+}
+
+#mainButtonContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+
+}
+
+#mainButtonContainer button{
+padding: 1%;
+background-color: #ffa6a6;
+border-radius: 16%;
+cursor: pointer;
+font-size: 149%;
+}
+
+#matches{
+    text-align: center;
+    padding: 1%;
+    font-size: 149%;
+}
+
+#matches input{
+    font-size: 82%;
+    padding: 0.3%;
+    text-align: center;
+    width: 3%;
+    margin: 0px 1%;
+}
+
+#playAgain{
+    position: absolute;
+    right: 2%;
+    font-size: 149%;
+    padding: 0.3%;
+    width: 3%;
+    top: 10%;
+    background-color: rgb(244, 208, 208);
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    nav{
+        width: 100vw;
+    }
+    #heading{
+        padding: 5%;
+    }
+    #matches{
+        font-size: 110%;
+        padding: 4%;
+    }
+    #playAgain{
+        font-size: 110%;
+        right: 2%;
+        top: 7%;
+        width: 7%;
+    }
+    #mainBoxContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #mainBoxContainer p{
+        text-align: center;
+            font-weight: bold;
+            font-size: 120%;
+            padding: 2px;
+        }
+    #computerBoxContainer,#userBoxContainer{
+        margin: 5%;
+    }
+    #computerBox,#userBox{
+        height: 19vh;
+        width: 49vw;
+    }
+    #mainButtonContainer button{
+        font-size: 110%;
+        padding: 2%;
+        }
+        #mainButtonContainer{
+            margin-top: 7%;
+        }
+  }
