@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rockstyle.css">
 </head>
 <body>
+   <!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p></p>
+  </div>
+</div>
+
     <nav><h2 id="mainHeading">Rock Paper Scissor</h2></nav>
-    <button id="playAgain">↻</button>
+    <button id="playAgain"> ↻ </button>
     <div id="matches">
         Play Match of  <input value="1" type="number"> games
     </div>
@@ -17,11 +30,13 @@
     <div id="computerBoxContainer">
         <p>Computer</p>
         <p id="mainComputerScore">Score : 0</p>
-        <img id="computerBox"></img>
+        <div class="alternateCompBox"></div>
+        <img id="computerBox" alt=""></img>
     </div>
     <div id="userBoxContainer">
         <p>User</p>
         <p id="mainUserScore">Score : 0</p>
+        <div class="alternateUserBox"></div>
         <img id="userBox"></img>
     </div>
 </div>
@@ -30,6 +45,6 @@
     <button id="paper">Paper</button>
     <button id="scissor">Scissor</button>
 </div>
-    <script src="script.js"></script>
+    <script src="rockscript.js"></script>
 </body>
 </html>

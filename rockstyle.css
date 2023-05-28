@@ -17,10 +17,9 @@
 }
 
 #computerBox,#userBox{
-    background-image:  linear-gradient(rgb(232, 115, 115), rgb(241, 232, 226)) !important;
-    height: 40vh;
-    width: 30vw;
-    /* border: 2px solid black; */
+    background-image:  linear-gradient(rgb(232, 115, 115), rgb(241, 232, 226));
+    height: 17vw;
+    width: 17vw;
 }
 
 #mainBoxContainer p{
@@ -62,12 +61,58 @@ font-size: 149%;
 #playAgain{
     position: absolute;
     right: 2%;
-    font-size: 149%;
-    padding: 0.3%;
     width: 3%;
+    height: 5%;
+    font-size: larger;
     top: 10%;
     background-color: rgb(244, 208, 208);
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .alternateUserBox,.alternateCompBox{
+    background-image:  linear-gradient(rgb(232, 115, 115), rgb(241, 232, 226));
+    height: 17vw;
+    width: 17vw;
+display: none;
+  }
 
 /* Media Queries */
 @media screen and (max-width: 480px) {
@@ -82,10 +127,12 @@ font-size: 149%;
         padding: 4%;
     }
     #playAgain{
-        font-size: 90%;
+        font-size: large;
         right: 2%;
-        top: 7%;
+        top: 6%;
         width: 7%;
+        height: 4%;
+
     }
     #mainBoxContainer{
         flex-direction: column;
@@ -102,8 +149,12 @@ font-size: 149%;
         margin: 5%;
     }
     #computerBox,#userBox{
-        height: 19vh;
-        width: 49vw;
+        height: 42vw;
+        width: 42vw;
+    }
+    .alternateUserBox,.alternateCompBox{
+        height: 42vw;
+        width: 42vw;
     }
     #mainButtonContainer button{
         font-size: 110%;
